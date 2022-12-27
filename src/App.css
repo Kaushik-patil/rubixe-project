@@ -1,38 +1,372 @@
-.App {
-  text-align: center;
+/* Body css */
+.App{
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header css */
+.header{
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+#logo {
+  margin-left: 70px;
+  color: white;
+}
+#nav{
+
+  margin-top: 20px;
+  margin-right: 0px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#nav ul  {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#nav ul li {
+  margin-right: 30px;
+}
+#nav ul li a{
+ font-size: 18px;
+}
+
+/* Banner div css */
+
+.bannerdiv{
+  margin-top: 5px;
+  height: 500px;
+  width: 100%;
+  /* background-image: url('./images/img1.jpg');
+  min-width: 100%;
+  max-height: 100%;
+  display: block; */
+}
+.bannerdiv img{
+  min-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+.Maindiv1{
+  width: 100%;
+  height: 550px;
+}
+.Maindiv1 .div1{
+  width: 80%;
+  height: 400px;
+  margin-left: 10%;
+}
+
+.Maindiv1 .div1 .data1{
+  display: flex;
+  justify-content: space-between;
+  padding-top:2% ;
+}
+.Maindiv1 .div1 .data1 .text{
+  width: 50%;
+  margin-left: 11%;
+}
+
+
+.Maindiv1 .div1 .data1 .text p:nth-child(1){
+  font-size: 30px ;
+  font-weight: 500;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Maindiv1 .div1 .data1 .text p:nth-child(2){
+  font-size: 20px ;
+  font-weight: 500; 
+}
+.Maindiv1 .div1 .data1 .img{
+  width: 30%;
+}
+
+.Maindiv1 .div2{
+  width: 100%;
+  height: 160px;
+  background-color: rgb(221, 46, 134);
+  color: white;
+ 
+ }
+.Maindiv1 .div2 .data2{
+  width: 60%;
+  height: 160px;
+  margin-left: 19%;
+}
+.Maindiv1 .div2 .data2 p:nth-child(1){
+  
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+  padding-top:15px ;
+  margin-bottom: 0px;
+}
+
+.Maindiv1 .div2 .data2 p:nth-child(2){
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 10px;  
+}
+
+/* Maindiv2 css */
+ .Maindiv2{
+  margin-top: 30px;
+  background-color: rgb(225, 238, 234);
+  height: 600px;
+  width: 100%;
+} 
+
+.Maindiv2 .data{
+  height: 600px;
+  width: 80%;
+  
+}
+.Maindiv2 .data .cards {
+  margin-left: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.Maindiv2 .data .cards .cards1{
+  width: 250px;
+  height: 330px; 
+  background-color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin-right: 10px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px rgb(0 0 0 /0.6);
+}
+
+.Maindiv2 .card-header0{
+width: 230px;
+height: 50px;
+background-color: rgb(19, 19, 71);
+border-top-left-radius: 40px; 
+border-top-right-radius: 40px;
+}
+
+
+.Maindiv2 .card-header0 div{
+  position: relative;
+  left: 90px;
+  top: -30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid gray;
+}
+.Maindiv2 .card-header1 div{
+  position: relative;
+  left: 90px;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid gray;
+}
+.Maindiv2 .card-header2 div{
+  position: relative;
+  left: 90px;
+  top: -30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid gray;
+}
+.Maindiv2 .card-header3 div{
+  position: relative;
+  left: 90px;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid gray;
+}
+.Maindiv2 .card-header4 div{
+  position: relative;
+  left: 90px;
+  top: -30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid gray;
+}
+
+.Maindiv2 .card-header1{
+  width: 230px;
+height: 50px;
+background-color: purple;
+margin-top: 250px;
+border-bottom-left-radius: 40px; 
+border-bottom-right-radius: 40px;
+}
+
+.Maindiv2 .card-header2{
+  width: 230px;
+height: 50px;
+background-color: orange;
+margin-top: 0px;
+border-top-left-radius: 40px; 
+border-top-right-radius: 40px;
+}
+
+
+.Maindiv2 .card-header3{
+  width: 230px;
+height: 50px;
+background-color: green;
+margin-top: 250px;
+border-bottom-left-radius: 40px; 
+border-bottom-right-radius: 40px;
+}
+
+.Maindiv2 .card-header4{
+  width: 230px;
+height: 50px;
+background-color: gold;
+margin-top: 0px;
+border-top-left-radius: 40px; 
+border-top-right-radius: 40px;
+}
+
+.Maindiv2 .data p:nth-child(1){
+ padding-left: 300px;
+ padding-top: 100px;
+ font-size: 30px;
+
+}
+/*Footer css*/
+
+.footer{
+  width: 100%;
+  height: 250px;
+}
+.footer .upperfooter{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer .upperfooter .info{
+ width: 150px;
+ height: auto;
+margin-bottom: 10px;
+}
+
+.footer .lowerfooter{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+.footer .lowerfooter p{
+  padding-top: 3px;
+  font-size: 22px;
+  margin-left: 550px;
+  left:30%;
+}
+/* Register user */
+
+.register{
+  width: 100%;
+  height: 500px;
+  background-color: white;
+}
+
+.register .form-container{
+  width: 60%;
+  height: 450px;
+  margin-left: 400px;
+  margin-top: 50px;
+  background-color: white;
+  border: 1px solid grey; 
+  display: flex;
+  justify-content: space-between;
+}
+
+.register .form-text{
+  width: 50%;
+  height: 400px;
+ 
+}
+.register .form-text h1{
+  margin-top: 100px;
+  margin-left: 100px;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.register .form-text  p{
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 60px;
+}
+
+.register .form{
+  width: 80%;
+  height: 400px;
+  margin-left: 70px;
+  
+}
+.register .form button{
+  height: 60px;
+  width: 500px;
+  background-color: blue;
+  color: white;
+  margin-left: 30px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.register .form .field{
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 100px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+.register .form .field label{
+  font-size: 25px;
+  font-weight: 500;
+}
+.register .form .field  input{
+  height: 50px;
+  width: 500px;
+  border-radius: 10px;
+ 
+}
+.bannerdiv h1 {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 100px;
+  width: 80px;
+}
+.bannerdiv p {
+  position: absolute;
+  top: 45%;
+  left: 21%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  width: 80px;
 }
